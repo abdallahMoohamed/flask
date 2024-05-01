@@ -12,6 +12,7 @@ def index():
 
 @app.route('/predict', methods=['POST'])
 def predict():
+  
     # Get input data
     data = request.json
     print(data)
