@@ -31,7 +31,6 @@ def predict():
      
     # Check format of file
     if image and allowed_file(image.filename):
-      image.save(image.filename)
       print(image.filename)
       response = {"image":image.filename}
       return jsonify(response)
